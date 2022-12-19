@@ -1,0 +1,151 @@
+body{
+    margin:0;
+}
+.card{
+    position: relative;
+    background-color:forestgreen;
+    width: 120px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center;
+    text-align: center;
+}
+.menu:hover{
+    animation-name: shake;
+    animation-duration: 1s;
+transform: scale(1.5,1.5);
+}
+/* @keyframes shake{
+    25%{
+        transform: rotate(20deg)  scale(1.5,1.5);
+    }
+    50%{
+        transform: rotate(-20deg)  scale(1.5,1.5);
+
+    }
+    75%{
+        transform: rotate(20deg)  scale(1.5,1.5);
+    }
+    90%{
+        transform: rotate(-20deg)  scale(1.5,1.5);
+    }
+    100%{
+        transform: rotate(0deg)    scale(1.5,1.5);
+    }
+} */
+.wrapper{
+    background-color:aquamarine;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(7,auto);
+    grid-template-rows: repeat(5,auto);
+    /* justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center; */
+    animation-name: bcfoto;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    background-color: #fff ;
+    backdrop-filter: blur(8px);
+    background: url("https://img.freepik.com/free-photo/closeup-shot-of-a-colorful-parrot-with-big-green-leaves-on-the_181624-46005.jpg?w=826&t=st=1671451973~exp=1671452573~hmac=15511e517504bab780ce51cf0b3110bf5a95a72d2e0d9d2b7bcbd923fe8dd118");
+    background-color: #fff ;
+    /* backdrop-filter: blur(8px); */
+    position: relative;
+}
+.wrapper::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    background-color: #fff4;
+    backdrop-filter: blur(2px);
+}
+
+.card:first-child{
+    position: relative;
+    background-color:forestgreen;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    margin: 10px;
+    overflow: hidden;
+}
+/* .card::before{
+position: absolute;
+top:0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color:coral;
+content:"Snow";
+justify-content: center;
+align-items: center;
+font:900 20px "Comic Sans MS", cursive;
+cursor:pointer;
+} */
+.osn{
+    width: 100vh;
+    align-self: center;
+    grid-column: span 7;
+    grid-row: span 7;
+    margin: 0 auto;
+    background-color: transparent;
+    height: auto;
+}
+.text{
+    width: 100vh;
+    align-self: center;
+    grid-column: span 7;
+    grid-row: span 7;
+    background-color: transparent;
+    margin: 0 auto;
+    font-size: x-small;
+    margin-bottom: 5vh;
+}
+.btn{
+    display:inline-block;
+    width: 100vh;
+    align-self: center;
+    grid-column: span 7;
+    grid-row: span 7;
+    margin: 0 auto;
+    border-color: black;
+    border-style: dashed;
+    border-width: 5px;
+    background-color:transparent;
+    border-radius: 0;
+    margin-bottom: 35vh;
+}
+@keyframes bcfoto{
+    0%{
+
+background: url("https://img.freepik.com/free-photo/closeup-shot-of-a-colorful-parrot-with-big-green-leaves-on-the_181624-46005.jpg?w=826&t=st=1671451973~exp=1671452573~hmac=15511e517504bab780ce51cf0b3110bf5a95a72d2e0d9d2b7bcbd923fe8dd118") no-repeat center top / cover;
+    }
+    25%{
+
+background: url("https://images.unsplash.com/photo-1586768019524-c6e902168263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=717&q=80") no-repeat center top / cover;
+    }
+    50%{
+
+background: url("https://images.unsplash.com/photo-1559084906-27df42f15c5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=842&q=80") no-repeat center top / cover;
+    }
+    75%{
+
+background: url("https://heaclub.ru/tim/10e7ebfc08831abfe33022e4fa6b62aa/prezhde-chem-zagovorit-korella-vnimatelno-prislushivaetsya-k-slovam-hozyaina.jpg") no-repeat center top / cover;
+    }
+    100%{
+
+background: url("https://images.unsplash.com/photo-1586768019524-c6e902168263?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=717&q=80") no-repeat center top / cover;
+    }
+}
